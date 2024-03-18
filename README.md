@@ -1,2 +1,2 @@
 # alx-higher_level_programming
-high level programming
+this is my high level programming repo for ALX projects
