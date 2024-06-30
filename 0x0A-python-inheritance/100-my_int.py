@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""Module for MyInt class"""
+
 class MyInt(int):
     """A rebel integer class"""
+
     def __eq__(self, other):
         """Inverts == operator"""
         return super().__ne__(other)

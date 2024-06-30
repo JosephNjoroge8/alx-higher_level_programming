@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+"""Module for Square class"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 class Square(Rectangle):
     """A Square class that inherits from Rectangle"""
+
     def __init__(self, size):
         """Initialize Square"""
         self.integer_validator("size", size)
@@ -15,4 +17,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """Return string representation of Square"""
-        return f"[Square] {self.__size}/{self.__size}"
+        return "[Square] {}/{}".format(self.__size, self.__size)

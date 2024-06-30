@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Module for add_attribute function"""
+
 def add_attribute(obj, attr, value):
     """Adds a new attribute to an object if possible"""
     if not hasattr(obj, '__dict__'):
