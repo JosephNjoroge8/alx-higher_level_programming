@@ -1,13 +1,9 @@
 #!/usr/bin/node
+// prints the title of a Star Wars movie where the episode number
 const request = require('request');
-const movieId = process.argv[2];
-const url = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
+const starWarsUri = 'https://swapi-api.hbtn.io/api/films/'.concat(process.argv[2]);
 
-request(url, (err, response, body) => {
-  if (err) {
-    console.log(err);
-  } else {
-    const data = JSON.parse(body);
-    console.log(data.title);
-  }
-});
+request(starWarsUri, function (_err, _res, body) {
+  body = JSON.parse(body);
+  console.log(body.title);
+});`
